@@ -18,7 +18,7 @@ public class lv1_로또최고최저순위 {
 
         int sameCount = 0;
         for(int winNum : win_nums) {
-            if(map.containsKey(winNum)) sameCount++;
+            if(map.containsKey(winNum)) sameCount++;    //containsKey: 맵에서 인자로 보낸 키가 있으면 true, 없으면 false
         }
 
         int maxRank = 7 - (sameCount + zeroCount);
